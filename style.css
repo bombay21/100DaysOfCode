@@ -1,0 +1,90 @@
+.calculator{
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  background: #ccb;
+  padding: 20px 10px;
+  border: 5px solid #777;
+  border-top: 10px solid #777;
+  border-bottom: 10px solid #777;
+  border-radius: 10px;
+}
+.model{
+  font-size: 13px;
+  font-family: monospace;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.screen{
+  width: 100% auto;
+  background: #777;
+  border: 1px solid #555;
+  font-family: monospace;
+  color: #ddd;
+  text-align: right;
+  margin: 10px 0;
+}
+
+.inner-display{
+  width: 100% auto;
+  height: 70px;
+  line-height: 70px;
+  font-size: 2.5em;
+  padding: 0 10px;
+  margin: 0;
+}
+#numbers, #off{display: none;}
+#off-state{text-align: center;background: #333;}
+.bye{
+  font-size: 0em;
+  color: #333;
+  transition: font-size 3s, color .5s;
+}
+.remove{display: none;}
+
+.row1{
+  width: 100% auto;
+  display: flex;
+  height: 50px;
+}
+input[type=button]{
+  background: #333;
+  color: #eee;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 0 none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.power{
+  display: flex;
+  justify-content: space-between;
+}
+#btn-c{
+  background: #107dac;
+}
+#btn-off{
+  background: #dc143c;
+  width: 20%;
+}
+#btn-on{
+  background: #228b22;
+  width: 20%;
+}
+.off-indicator, .on-indicator{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.off-indicator{
+  background: #f00;
+  box-shadow: 0 0 5px #f00;
+}
+.on-indicator{
+  background: #32cd32;
+  box-shadow: 0 0 5px #32cd32;
+}
